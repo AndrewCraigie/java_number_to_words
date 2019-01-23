@@ -61,7 +61,7 @@ public class NumberToWords {
         // 1..19
         if ((tensOnes > 0) && (tensOnes < 20)) {
             tensOnesString = units[tensOnes];
-            return unitPrepend + hundredString + tensOnesString;
+            return unitPrepend + hundredString + tensOnesString + largeNumberAppend;
         }
 
 
