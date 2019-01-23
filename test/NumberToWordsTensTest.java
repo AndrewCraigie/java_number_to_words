@@ -9,7 +9,7 @@ import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class NumberToWordsTestTens {
+public class NumberToWordsTensTest {
 
 
     @Parameters
@@ -32,7 +32,7 @@ public class NumberToWordsTestTens {
     private String wordOutput;
 
 
-    public NumberToWordsTestTens(int numberInput, String wordOutput) {
+    public NumberToWordsTensTest(int numberInput, String wordOutput) {
         this.numberInput = numberInput;
         this.wordOutput = wordOutput;
     }

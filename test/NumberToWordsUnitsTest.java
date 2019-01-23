@@ -8,7 +8,7 @@ import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class NumberToWordsTestUnits {
+public class NumberToWordsUnitsTest {
 
 
     @Parameters
@@ -25,7 +25,7 @@ public class NumberToWordsTestUnits {
     private String wordOutput;
 
 
-    public NumberToWordsTestUnits(int numberInput, String wordOutput){
+    public NumberToWordsUnitsTest(int numberInput, String wordOutput){
         this.numberInput = numberInput;
         this.wordOutput = wordOutput;
     }
