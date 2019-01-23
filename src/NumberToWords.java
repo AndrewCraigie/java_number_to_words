@@ -86,6 +86,8 @@ public class NumberToWords {
 
         String numberInWords = "";
 
+        // TODO Loop the following reucing the value of the power by 3
+
         // Billions
         int numberOfBillions = inputNum / (int) Math.pow(10, 9);
         if(numberOfBillions > 0){
