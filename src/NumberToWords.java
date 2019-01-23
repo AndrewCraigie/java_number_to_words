@@ -35,19 +35,19 @@ public class NumberToWords {
 
     public static String unitHundredTensOnes(int number, int powerNumber) {
 
-        String unitString = "";
-        String namesString = "";
+        String unitPrepend = "";
+        String hundredString = "";
         String tensOnesString = "";
-        String powerString = largeNumberName[powerNumber];
+        String largeNumberAppend = largeNumberName[powerNumber];
 
         String result = "";
 
         int power = 2;
         int unit = (int) (number / (Math.pow(10, power)));
 
-        unitString = units[unit];           // e.g.t Two
+        unitPrepend = units[unit];           // e.g.t Two
         if(unit != 0){
-            namesString = largeNumberName[power];     // Hundred
+            hundredString = largeNumberName[power];     // Hundred
         }
 
 
@@ -61,7 +61,7 @@ public class NumberToWords {
         // 1..19
         if ((tensOnes > 0) && (tensOnes < 20)) {
             tensOnesString = units[tensOnes];
-            return unitString + namesString + tensOnesString;
+            return unitPrepend + hundredString + tensOnesString;
         }
 
 
@@ -76,7 +76,7 @@ public class NumberToWords {
         int onesPart = tensOnes % 10;
         String onesString = units[onesPart];
 
-        return unitString + namesString + tensString + onesString + powerString;
+        return unitPrepend + hundredString + tensString + onesString + largeNumberAppend;
 
     }
 
